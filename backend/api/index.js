@@ -2,8 +2,8 @@ const dotenv = require("dotenv")
 dotenv.config({
     path: "./.env"
 })
-const app = require("./src/app")
-const connectDB = require("./src/model/database")
+const app = require("../src/app")
+const connectDB = require("../src/model/database")
 
 
 const port = process.env.PORT

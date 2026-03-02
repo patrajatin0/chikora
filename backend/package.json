@@ -11,9 +11,9 @@
   "license": "ISC",
   "author": "jatin",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon api/index.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
