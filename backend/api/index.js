@@ -11,10 +11,10 @@ const port = process.env.PORT
 connectDB()
     .then((result) => {
         console.log("the database connection establisher...");
-        // app.listen(port, () => {
-        //     console.log("The port is listening on the localhost:" + port);
+        app.listen(port, () => {
+            console.log("The port is listening on the localhost:" + port);
 
-        // })
+        })
 
     }).catch((err) => {
         console.log("the db is not connected");
@@ -23,23 +23,3 @@ connectDB()
 
 
 
-async function connectToMongoDB() {
-    try {
-        connectDB()
-            .then((result) => {
-                console.log("the database connection establisher...");
-                // app.listen(port, () => {
-                //     console.log("The port is listening on the localhost:" + port);
-
-                // })
-
-            }).catch((err) => {
-                console.log("the db is not connected");
-
-            })
-
-    } catch (error) {
-
-    }
-
-}
